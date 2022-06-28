@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Parallel Testing by TestNG" parallel = "tests" thread-count="5" verbose="1" >
+
+ 
+  <test name="Google Test">
+  <parameter name = "browser" value = "Chrome" />
+    <classes>
+      <class name="google.Google"/>
+      </classes>
+      </test> 
+      
+<test name="Yahoo Test">
+  <parameter name = "browser" value = "Firefox" />
+    <classes>
+      <class name="yahoo.Yahoo"/>
+      </classes>
+  </test> 
+ 
+  <test name="Bing Test">
+  <parameter name = "browser" value = "Edge" />
+    <classes>
+      <class name="bing.Bing"/>
+      </classes>
+  </test>  
+  
+</suite>

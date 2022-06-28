@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel Testing by TestNG]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Bing Test(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="bing.Bing">
+        <methods>
+          <include name="atTest"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- bing.Bing -->
+    </classes>
+  </test> <!-- Bing Test(failed) -->
+</suite> <!-- Failed suite [Parallel Testing by TestNG] -->
